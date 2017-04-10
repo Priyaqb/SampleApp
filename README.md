@@ -1,6 +1,5 @@
-# ES6 SASS Webpack 2 starter kit
+# How to build an HTML
 
-This is a barebone minimalistic starter kit for kicking off an ES6, SASS, Webpack 2 project.
 
 ## Usage
 
@@ -31,15 +30,4 @@ Now run `npm start` to start the dev server. Open [localhost:3000](http://localh
 ### Build for production
 Run `npm run build` to generate the files in build folder
 
-## FAQ
-**Q:** Where is `build/` folder and where are the build files.
 
-**A:** While you are developing with `npm start`, the webpack-dev-server won't write any files to disk. It will be serving the build files from memory.
-
-**Q:** I don't want Hot Module Reloading
-
-**A:** Please remove `hot` and `inline` from `devServer` object in `webpack.config.js` file ([code](https://github.com/iamvijaydev/es6-sass-webpack2-starterkit/blob/master/webpack.config.js#L57-L58)). Additionally also remove the plugin `new webpack.HotModuleReplacementPlugin()` from `plugins` array ([code](https://github.com/iamvijaydev/es6-sass-webpack2-starterkit/blob/master/webpack.config.js#L74)).
-
-**Q:** How to disable `historyApiFallback`
-
-**A:** Please remove `historyApiFallback` from `devServer` object in `webpack.config.js` file ([code](https://github.com/iamvijaydev/es6-sass-webpack2-starterkit/blob/master/webpack.config.js#L61)).
