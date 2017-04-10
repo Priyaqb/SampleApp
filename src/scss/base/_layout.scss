@@ -1,0 +1,36 @@
+.content {
+    background: $default-background-colour;
+    border: 2px solid $orange;
+    padding: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    @media (max-width: $small) {
+        display: block;
+    }
+    .main {
+        display: flex;
+        flex-flow: column wrap;
+        padding: 10px;
+        order: 1;
+        flex: 4 0px;
+        @media (max-width: $small) {
+            display: block;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+    }
+    aside {
+        flex: 1 0px;
+        order: 2;
+        padding: 10px 10px 10px 15px;
+        margin-left: 15px;
+        border-left: 1px solid $orange;
+        @media (max-width: $small) {
+            border-top: 1px solid $orange;
+            border-left: none;
+            margin-left: 0;
+            padding-left: 10px;
+        }
+    }
+}

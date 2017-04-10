@@ -1,0 +1,7 @@
+p {
+    margin: 0 0 20px;
+    font-weight: 300;
+    @media (max-width: $small) {
+        line-height: 20px;
+    }
+}

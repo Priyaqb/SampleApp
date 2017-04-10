@@ -1,0 +1,21 @@
+.banner {
+    display: flex;
+    img {
+        width: 100%;
+    }
+}
+
+.main {
+    &__features {
+        min-height: 250px;
+        .element {
+            float: left;
+            shape-outside: circle(50%);
+            width: 200px;
+            height: 200px;
+        }
+        ul {
+        	height: 100px;
+        }
+    }
+}
