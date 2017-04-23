@@ -1,7 +1,7 @@
-@import "base";
-@import "body";
-@import "container";
-@import "layout";
+@import "settings/breakpoints";
+@import "settings/colours";
+@import "settings/reset";
+@import "settings/typography";
 @import "heading";
-@import "paragraph";
 @import "listing";
+@import "paragraph";

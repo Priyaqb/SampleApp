@@ -36,6 +36,65 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #F68329;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  margin-bottom: 20px; }
+
+h1 {
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 55px; }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 24px;
+      margin: 0 0 20px; } }
+
+h2 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  background: #F68329;
+  color: #fff;
+  padding: 8px 10px; }
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 24px;
+      line-height: 28px;
+      margin: 10px 0 20px; } }
+
+h3 {
+  color: #333;
+  font-weight: 600;
+  font-size: 16px; }
+
+ul {
+  margin-left: 25px; }
+  ul li {
+    margin-bottom: 8px; }
+    ul li:before {
+      content: ".";
+      color: #F68329;
+      font-weight: bold;
+      font-size: 24px;
+      margin-right: 10px;
+      vertical-align: top;
+      line-height: 6px; }
+
+p {
+  margin: 0 0 20px;
+  font-weight: 300; }
+  @media (max-width: 768px) {
+    p {
+      line-height: 20px; } }
+
 * {
   padding: 0;
   margin: 0; }
@@ -47,8 +106,6 @@ html, body {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  color: #333;
-  background: url("http://68.media.tumblr.com/dbfb62a2f5f7c9c042b7e14144818774/tumblr_nndq8w3Leo1qcdtsho1_1280.jpg");
   line-height: 20px;
   letter-spacing: 0px; }
 
@@ -99,65 +156,6 @@ body {
         border-left: none;
         margin-left: 0;
         padding-left: 10px; } }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #F68329;
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
-  margin-bottom: 20px; }
-
-h1 {
-  font-weight: 300;
-  font-size: 50px;
-  line-height: 55px; }
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 24px;
-      margin: 0 0 20px; } }
-
-h2 {
-  font-size: 22px;
-  font-weight: 400;
-  margin-bottom: 20px;
-  line-height: 1.1;
-  background: #F68329;
-  color: #fff;
-  padding: 8px 10px; }
-  @media (max-width: 768px) {
-    h2 {
-      font-size: 24px;
-      line-height: 28px;
-      margin: 10px 0 20px; } }
-
-h3 {
-  color: #333;
-  font-weight: 600;
-  font-size: 16px; }
-
-p {
-  margin: 0 0 20px;
-  font-weight: 300; }
-  @media (max-width: 768px) {
-    p {
-      line-height: 20px; } }
-
-ul {
-  margin-left: 25px; }
-  ul li {
-    margin-bottom: 8px; }
-    ul li:before {
-      content: ".";
-      color: #F68329;
-      font-weight: bold;
-      font-size: 24px;
-      margin-right: 10px;
-      vertical-align: top;
-      line-height: 6px; }
 
 .header {
   display: flex;
@@ -218,5 +216,9 @@ ul {
     .main ol li p, .main ol li figcaption {
       font-weight: 400;
       font-size: 12px; }
+
+body {
+  color: #333;
+  background: url("http://68.media.tumblr.com/dbfb62a2f5f7c9c042b7e14144818774/tumblr_nndq8w3Leo1qcdtsho1_1280.jpg"); }
 
 /*# sourceMappingURL=main.css.map*/
