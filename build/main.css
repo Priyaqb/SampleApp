@@ -1,4 +1,4 @@
-/*! v1.0.0 */
+/*! vundefined */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -134,6 +134,11 @@ h2 {
       line-height: 28px;
       margin: 10px 0 20px; } }
 
+h3 {
+  color: #333;
+  font-weight: 600;
+  font-size: 16px; }
+
 p {
   margin: 0 0 20px;
   font-weight: 300; }
@@ -194,14 +199,24 @@ ul {
   .banner img {
     width: 100%; }
 
-.main__features {
-  min-height: 250px; }
-  .main__features .element {
-    float: left;
-    shape-outside: circle(50%);
-    width: 200px;
-    height: 200px; }
-  .main__features ul {
-    height: 100px; }
+.main__features .element {
+  float: left;
+  shape-outside: circle(50%);
+  width: 200px;
+  height: 200px; }
+
+.main__features ul {
+  height: 100px; }
+
+.main ol {
+  padding-left: 25px;
+  list-style: decimal; }
+  .main ol li {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 20px; }
+    .main ol li p, .main ol li figcaption {
+      font-weight: 400;
+      font-size: 12px; }
 
 /*# sourceMappingURL=main.css.map*/

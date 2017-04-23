@@ -6,6 +6,7 @@
     <title>HTML Basics</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
     <div class="container">
         <header class="header">
@@ -38,8 +39,123 @@
                     </ul>
                 </section>
                 <section>
-                    <h2>About CSS layout</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec dui facilisis libero scelerisque viverra. Suspendisse potenti. Proin hendrerit eget dolor nec commodo. Aliquam congue posuere lectus, a porta urna ornare sit amet. Morbi quis aliquam sem. Quisque sit amet ante in libero dictum aliquam.</p>
+                    <h2>New in HTML5</h2>
+                    <ol>
+                        <li>
+                            <h3>figure &amp; figcaption</h3>
+                            <figure>
+                                <img src="https://www.w3schools.com/tags/img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
+                                <figcaption>Fig.1 - A view of the pulpit rock in Norway.</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <h3>details &amp; summary</h3>
+                            <details>
+                                <summary>Copyright 1999-2014.</summary>
+                                <p> - by Refsnes Data. All Rights Reserved.</p>
+                                <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+                            </details>
+                            <p><b>Note:</b> The details tag is not supported in Internet Explorer.</p>
+                        </li>
+                        <li>
+                            <h3>bdi</h3>
+                            <ul>
+                                <li>User
+                                    <bdi>hrefs</bdi>: 60 points</li>
+                                <li>User
+                                    <bdi>jdoe</bdi>: 80 points</li>
+                                <li>User
+                                    <bdi>إيان</bdi>: 90 points</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>wbr</h3>
+                            <p>And the world record for the longest place name in an English-speaking country is...
+                                <br>
+                                <i>Taumata<wbr>whakatangihanga<wbr>koauau<wbr>o<wbr>tamatea<wbr>turi<wbr>pukakapiki<wbr>maunga<wbr>horo<wbr>nuku<wbr>pokai<wbr>whenua<wbr>kitanatahu</i></p>
+                            <p>This is the name of a hill in New Zealand.</p>
+                            <p>Here's what it looks like without using the <code>wbr</code> tag...
+                                <i>Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu</i></p>
+                        </li>
+                        <li>
+                            <h3>datalist</h3>
+                            <form action="/action_page.php" method="get">
+                                <p>
+                                    <label>Select browser</label>
+                                </p>
+                                <input list="browsers" name="browser">
+                                <datalist id="browsers">
+                                    <option value="Internet Explorer">
+                                        <option value="Firefox">
+                                            <option value="Chrome">
+                                                <option value="Opera">
+                                                    <option value="Safari">
+                                </datalist>
+                                <input type="submit">
+                            </form>
+                        </li>
+                        <li>
+                            <h3>output</h3>
+                            <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+                                <input type="range" id="a" value="50">100 +
+                                <input type="number" id="b" value="50"> =
+                                <output name="x" for="a b">100</output>
+                            </form>
+                        </li>
+                        <li>
+                            <h3>progress</h3>
+                            <progress value="50" max="100">
+                            </progress>
+                        </li>
+                        <li>
+                            <h3>HTML 5 Input Types</h3>
+                            <form action="">
+                                <p>
+                                    Select your favorite color:
+                                    <input type="color" name="favcolor" value="#ff0000">
+                                </p>
+                                <p> Enter a date before 1980-01-01:
+                                    <br>
+                                    <input type="date" name="bday" max="1979-12-31">
+                                    <br>
+                                    <br> Enter a date after 2000-01-01:
+                                    <br>
+                                    <input type="date" name="bday" min="2000-01-02">
+                                    <br>
+                                    <br>
+                                </p>
+                                <p> Birthday (date and time):
+                                    <input type="datetime-local" name="bdaytime">
+                                </p>
+                                <p> E-mail:
+                                    <input type="email" name="email"> </p>
+                                <p>Birthday (month and year):
+                                    <input type="month" name="bdaymonth">
+                                </p>
+                                <p>
+                                    Quantity (between 1 and 5):
+                                    <input type="number" name="quantity" min="1" max="5">
+                                </p>
+                                <p>
+                                    Telephone:
+                                    <input type="tel" name="usrtel">
+                                </p>
+                                <p>
+                                    Select a time:
+                                    <input type="time" name="usr_time">
+                                </p>
+                                <p>
+                                    Add your homepage:
+                                    <input type="url" name="homepage">
+                                </p>
+                                <p>
+                                    Select a week:
+                                    <input type="week" name="year_week">
+                                </p>
+                                <input type="submit">
+                            </form>
+                        </li>
+                    </ol>
                 </section>
             </main>
             <aside>
